@@ -1,0 +1,17 @@
+footer {
+  width: 70%;
+  margin: 16px auto;
+  overflow: auto;
+  font-size: 0.9rem;
+  a {
+    color: #999;
+  }
+  .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+    li {
+      line-height: 1.9;
+    }
+  }
+}

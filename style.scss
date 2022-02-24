@@ -1,0 +1,62 @@
+/* Global Styles */
+
+$primary-color: #e50914;
+$dark-color: #141414;
+$light-color: #f4f4f4;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #999;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  background-color: $primary-color;
+  color: #fff;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  margin-right: 5px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+@import "./header";
+@import "./tabs";
+@import "./footer";
+@import "./resposive";

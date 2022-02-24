@@ -1,0 +1,112 @@
+@media (max-width: 1023px) {
+  header {
+    height: 70vh;
+    .header-content {
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      a {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .tabs {
+    .container {
+      width: 80%;
+      p {
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+  .tab-content {
+    .container {
+      width: 80%;
+      #tab-1-content {
+        .tab1-content-inner {
+          text-align: center;
+          grid-template-columns: 1fr !important;
+          img {
+            width: 400px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    width: 80%;
+  }
+}
+@media (max-width: 678px) {
+  header {
+    .header-top {
+      img {
+        top: 30% !important;
+        left: 5% !important;
+        transform: translate(0) !important;
+      }
+    }
+    .header-content {
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1rem;
+      }
+      a {
+        font-size: 1.2rem;
+        padding: 12px 20px;
+      }
+    }
+  }
+  .tabs {
+    .container {
+      width: 90%;
+    }
+  }
+  .tab-content {
+    .container {
+      width: 90%;
+      h3 {
+        font-size: 1.2rem !important;
+      }
+      #tab-1-content {
+        .tab1-content-inner {
+          text-align: center;
+          grid-template-columns: 1fr !important;
+        }
+      }
+      #tab-2-content {
+        .tab2-top {
+          grid-template-columns: 1fr !important;
+          text-align: center;
+          h3 {
+            margin: 0;
+          }
+          a {
+            margin: 0 auto;
+          }
+        }
+        .tab2-bottom {
+          grid-template-columns: 1fr !important;
+        }
+      }
+      #tab-3-content {
+        .tab3-bottom {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  footer {
+    font-size: 0.8rem;
+    .footer-cols {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+}

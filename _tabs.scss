@@ -1,0 +1,143 @@
+.tabs {
+  padding-top: 16px;
+  background-color: $dark-color;
+  border-bottom: 3px solid #3d3d3d;
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 10px;
+    div {
+      flex: 1;
+      padding: 32px 0;
+      &:hover {
+        color: #fff;
+        cursor: pointer;
+      }
+      p {
+        font-size: 1.6rem;
+        padding-top: 8px;
+      }
+    }
+    .tab-border {
+      border-bottom: $primary-color 4px solid;
+      color: #fff;
+    }
+  }
+}
+.tab-content {
+  padding: 50px 0;
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    #tab-1-content {
+      .tab1-content-inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        .tab-desc {
+          h3 {
+            font-size: 1.9rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+          }
+          a {
+            padding: 12px 20px;
+          }
+        }
+      }
+    }
+    #tab-2-content {
+      .tab2-top {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        h3 {
+          font-size: 1.9rem;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+        a {
+          padding: 12px 20px;
+          max-width: fit-content;
+        }
+      }
+      .tab2-bottom {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        margin-top: 32px;
+        text-align: center;
+        .item {
+          h4 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 8px 0 24px 0;
+          }
+        }
+      }
+    }
+    #tab-3-content {
+      .tab3-top {
+        text-align: center;
+        margin-bottom: 50px;
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+      }
+      .tab3-bottom {
+        table {
+          width: 100%;
+          margin-top: 2rem;
+          border-collapse: collapse;
+          border-spacing: 0;
+          thead {
+            th {
+              text-transform: uppercase;
+              padding: 12px;
+              color: #fff;
+            }
+          }
+          tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+            tr {
+              td {
+                color: #999;
+                padding: 12px 22px;
+                text-align: center;
+                &:first-child {
+                  text-align: left;
+                }
+              }
+              &:nth-child(odd) {
+                background-color: #222;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .show {
+      display: block !important;
+      opacity: 1 !important;
+      transition: all 1000 ease-in;
+    }
+    #tab-1-content,
+    #tab-2-content,
+    #tab-3-content {
+      display: none;
+      opacity: 0;
+    }
+  }
+}
