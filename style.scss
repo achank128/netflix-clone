@@ -56,7 +56,7 @@ img {
   margin-right: 5px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
 }
-@import "./header";
-@import "./tabs";
-@import "./footer";
-@import "./resposive";
+@import "./scss/header";
+@import "./scss/tabs";
+@import "./scss/footer";
+@import "./scss/resposive";
